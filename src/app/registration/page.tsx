@@ -1,0 +1,56 @@
+import { Typography, Button, Container, Box } from "@mui/material";
+import Logo from "../assets/logo";
+import RegisIllustration from "../assets/regisillustration";
+import EmailInput from "../components/emailInput";
+import PasswordInput from "../components/passwordInput";
+import PhoneInput from "../components/phoneInput";
+import StoreInput from "../components/storeInput";
+
+export default function Registration() {
+  return (
+    <div className="flex content-center h-screen flex-col md:flex-row">
+      <div className="w-full self-center">
+        <RegisIllustration className="size-100 m-auto" />
+      </div>
+      <div className="w-full overflow-y-scroll">
+        <Container
+          maxWidth="sm"
+          sx={{ backgroundColor: "white", borderRadius: 4, py: 4 }}
+          className="z-10"
+        >
+          <div className="flex flex-col items-center gap-2">
+            <Logo className="size-16" />
+            <Typography
+              component="h1"
+              variant="h3"
+              sx={{
+                textAlign: "center",
+                fontWeight: 600,
+                mb: 6,
+              }}
+            >
+              Stockflow
+            </Typography>
+          </div>
+          <Box component="form">
+            <StoreInput />
+            <PhoneInput />
+            <EmailInput />
+            <PasswordInput label="Password" />
+            <PasswordInput label="Confirm Password" />
+            <Button
+              type="submit"
+              variant="contained"
+              sx={{
+                backgroundColor: "#6358DC",
+              }}
+              fullWidth
+            >
+              Register
+            </Button>
+          </Box>
+        </Container>
+      </div>
+    </div>
+  );
+}
