@@ -1,15 +1,11 @@
 import {
   Box,
   Button,
-  Card,
   Container,
-  InputAdornment,
-  Paper,
-  TextField,
   Typography,
 } from "@mui/material";
-import PasswordInput from "./passwordInput";
-import EmailInput from "./emailInput";
+import EmailInput from "../components/emailInput";
+import PasswordInput from "../components/passwordInput";
 import Logo from "../assets/logo";
 
 export default function Login() {
@@ -38,7 +34,7 @@ export default function Login() {
         </div>
         <Box component="form">
           <EmailInput />
-          <PasswordInput />
+          <PasswordInput label="Password" />
           <Button
             type="submit"
             variant="contained"
