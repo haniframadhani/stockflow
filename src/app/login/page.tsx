@@ -52,7 +52,7 @@ export default function Login() {
           >
             Belum punya akun?
             <Button
-              href="#"
+              href="/registration"
               sx={{
                 textTransform: "none",
                 color: "#6358DC",

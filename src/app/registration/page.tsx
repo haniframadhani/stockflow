@@ -48,6 +48,22 @@ export default function Registration() {
             >
               Register
             </Button>
+            <Typography
+              component="p"
+              variant="body2"
+              sx={{ textAlign: "center"}}
+            >
+              Sudah punya akun?
+              <Button
+                href="/login"
+                sx={{
+                  textTransform: "none",
+                  color: "#6358DC",
+                }}
+              >
+                Login sekarang
+              </Button>
+            </Typography>
           </Box>
         </Container>
       </div>
